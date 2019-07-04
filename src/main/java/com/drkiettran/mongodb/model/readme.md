@@ -16,8 +16,6 @@ mongoimport --db airline --collection airports --type csv --headerline --file ./
 ```
 
 
-
-
 ## Run mongoDB client
 
 ```
@@ -64,5 +62,12 @@ java -jar target/mongodb-0.0.1-SNAPSHOT.jar
 ```
 http://localhost:8080/airports?iata=06N
 http://localhost:8080/planes?tailnum=N104UA
+```
+
+## Curl
+
+```
+curl http://localhost:8080/airports?iata=06N
+curl http://localhost:8080/planes?tailnum=N104UA
 ```
 
